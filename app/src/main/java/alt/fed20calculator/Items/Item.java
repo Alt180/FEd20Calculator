@@ -10,8 +10,8 @@ import java.util.HashMap;
 public class Item implements Cloneable {
     static final String TAG = "Item";
     private boolean drop = false;
-    String name, effect;
-    int durability, expGranted = 0;
+    private String name, effect;
+    private int durability;
 
     /**
      * Creates a consumable item that cannot be equipped or used in battle.
@@ -60,10 +60,6 @@ public class Item implements Cloneable {
 
     public int getDurability() {
         return durability;
-    }
-
-    public int getExpGranted() {
-        return expGranted;
     }
 
     @Override

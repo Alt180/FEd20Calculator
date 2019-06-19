@@ -1,6 +1,7 @@
 package alt.fed20calculator.Items;
 
 public class Flute extends Item {
+    private int expGranted;
     /**
      * Creates a flute item to allow allies to move again but cannot be equipped or used in battle.
      * @param name Item's name.
@@ -8,11 +9,7 @@ public class Flute extends Item {
      * @param effect Description of the item's special effect if it has one.
      */
     public Flute(String name, int durability, int expGranted, String effect) {
-        this.name = name;
-        this.durability = durability;
+        super(name, durability, effect);
         this.expGranted = expGranted;
-        this.effect = effect;
-        minRange = 1;
-        maxRange = 1;
     }
 }
