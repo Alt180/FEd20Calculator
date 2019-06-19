@@ -3,6 +3,7 @@ package alt.fed20calculator.Items;
 public class Staff extends Item {
     private int minRange;
     private int maxRange;
+    private int expGranted;
     private char rank;
     /**
      * Creates a staff item to heal allies but cannot be equipped or used in battle.
@@ -15,7 +16,6 @@ public class Staff extends Item {
         super(name, durability, effect);
         this.minRange = minRange;
         this.maxRange = maxRange;
-        this.durability = durability;
         this.rank = rank;
         this.expGranted = expGranted;
     }
